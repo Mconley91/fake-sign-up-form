@@ -1,3 +1,41 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('fonts/Norse-Bold.otf');
+}
+
 body {
     background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#background-image-container {
+    width: 40%;
+    background-image: url('images/crusader\ kings\ city\ alley.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#form-container {
+    width: 60%;
+}
+
+#logo-container {
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(82, 77, 77, 0.1);
+}
+
+#odin-image {
+    height: 100px;
+}
+
+#odin-text {
+    font-family: "Norse-Bold";
+    font-size: 70px;
 }
