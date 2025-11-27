@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: 'Norse-Bold';
     src: url('fonts/Norse-Bold.otf');
@@ -9,6 +14,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 100vh;
+    font-size: 25px;
 }
 
 #background-image-container {
@@ -17,6 +23,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#art-credit {
+    font-size: small;
+    text-align: center;
+    position: relative;
+    margin-top: 55vh;
 }
 
 #form-container {
@@ -29,6 +42,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgba(82, 77, 77, 0.1);
+    padding: 10px;
 }
 
 #odin-image {
@@ -38,4 +52,60 @@ body {
 #odin-text {
     font-family: "Norse-Bold";
     font-size: 70px;
+    margin: 0;
+}
+
+.form-sub-container {
+    padding: 20px 0px 20px 5vw;
+
+}
+
+#form-header {
+    margin-top: 15vh;
+}
+
+#form-body {
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+}
+
+#input-container {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ width: 400px;
+}
+
+#input-container > div {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+div > label {
+    font-size:small;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    color: white;
+    background-color: rgb(27, 27, 44);
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+}
+
+input[type="password"]:invalid, 
+input[type="email"]:invalid,
+input[type="tel"]:invalid {
+    border: solid red 2px;
+}
+
+input:focus {
+    border: solid blue -1px;
 }
